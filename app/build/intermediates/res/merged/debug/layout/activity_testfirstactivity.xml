@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@drawable/cardview">
+
+   
+ 
+    <RelativeLayout 
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="#ffffff">
+    
+  
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/telerickshaw_logo"
+        />
+    
+    <ScrollView
+        android:id="@+id/scrollviewabout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp" >
+
+            <FrameLayout
+                android:id="@+id/topbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#303030" >
+
+                <TextView
+                    android:id="@+id/textView_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Book Your Ride"
+                    android:textColor="#FFFFFF" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/middlebar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/topbar"
+                android:background="#FFB000"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/textView_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="From"
+                    android:textColor="#FFFFFF" />
+
+                <com.gcs.utils.CustomAutoCompleteTextView
+                    android:id="@+id/atv_placesfrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_from"
+                    android:background="@drawable/textboxbg" >
+
+                    <requestFocus />
+                </com.gcs.utils.CustomAutoCompleteTextView>
+
+                <TextView
+                    android:id="@+id/textView_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/atv_placesfrom"
+                    android:layout_margin="5dp"
+                    android:text="To"
+                    android:textColor="#FFFFFF" />
+
+                <com.gcs.utils.CustomAutoCompleteTextView
+                    android:id="@+id/atv_placesto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_to"
+                    android:background="@drawable/textboxbg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottombar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middlebar"
+                android:background="#FFFFFF" >
+            </RelativeLayout>
+        </RelativeLayout>
+           
+           </ScrollView>
+    
+    <Button
+              android:id="@+id/button_call"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_margin="3dp"
+              android:text="CALL ME BACK" 
+              android:layout_centerHorizontal="true"
+              android:textColor="#ffffff"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp"
+              android:background="@drawable/greybutton_properties"/>
+     
+    
+     
+    
+    </RelativeLayout>
+    
+     
+   
+   
+    
+ 
+    
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/activity_testfirstactivity.xml -->

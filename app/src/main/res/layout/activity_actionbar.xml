@@ -1,0 +1,116 @@
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+
+     <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        
+        android:id="@+id/frame_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+    
+     
+   
+       <RelativeLayout 
+        android:id="@+id/relativelayout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent" 
+        android:background="#ffffff"
+        android:layout_gravity="start"
+        >
+        
+      <ImageView
+	    android:id="@+id/aictlslogo"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/aictsl"
+	    android:layout_centerHorizontal="true"
+	    
+	  />
+   
+    <ImageView
+	    android:id="@+id/profile_image"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/aictlslogo"
+	    android:src="@drawable/telerickshaw_logo"
+	    android:layout_centerHorizontal="true"
+	    
+	  />
+    
+    <RelativeLayout 
+        android:id="@+id/profilelayout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" 
+        android:background="#0D0D0D"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/profile_image"
+         >
+         
+         <ImageView
+	    android:id="@+id/profile_icon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/profileicon"
+	    android:layout_alignParentLeft="true"
+	 	 android:layout_centerVertical="true"
+	    android:layout_toLeftOf="@+id/textViewuname"
+	 	 />
+        
+        <TextView
+          android:id="@+id/textViewuname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:textColor="#8D8D8D"
+          android:layout_centerHorizontal="true"
+          android:textSize="18dp"
+          android:text="Sankalp" />
+        
+     <TextView
+          android:id="@+id/textViewucontact"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textViewuname"
+          android:textColor="#8D8D8D"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="10dp"
+          android:textSize="12dp"
+          android:text="9926610468" />
+     
+     
+        </RelativeLayout>
+        
+  <ListView
+            android:id="@+id/list_slidermenu"
+        	android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+			android:layout_below="@+id/profilelayout"
+     	    android:choiceMode="singleChoice"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="0.5dp"
+            android:background="#242424"
+            android:divider="@drawable/listdividerstyle"/>
+        
+   </RelativeLayout> 
+    
+   
+     	
+   
+   </android.support.v4.widget.DrawerLayout>
+   
+  
+

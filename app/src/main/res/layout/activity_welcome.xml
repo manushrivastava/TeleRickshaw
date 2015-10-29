@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp1" 
+    >
+    
+     
+    
+
+     <ImageView
+		android:id="@+id/panningView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/splashbg"
+		android:alpha="0.55"
+		android:scaleType="fitXY"
+		/>
+     
+   
+      
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/telerickshaw_logo" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DD9A32"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:text="Anytime...Anywhere" />
+
+    <RelativeLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+     <Button
+         android:id="@+id/button_signup"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="@dimen/signinbuttonmargin"
+         android:background="@drawable/greybutton_properties"
+         android:text="Create account"
+         android:textColor="#ffffff"
+         android:textStyle="bold" />
+     
+     <Button
+         android:id="@+id/button_signin"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button_signup"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="@dimen/signinbuttonmargin"
+         android:background="@drawable/greybutton_properties"
+         android:text="Already have an account"
+         android:textColor="#ffffff"
+         android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

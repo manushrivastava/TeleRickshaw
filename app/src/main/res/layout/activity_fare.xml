@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardview">
+
+   
+ 
+    <RelativeLayout 
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    
+  
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/telerickshaw_logo"
+        />
+    
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DD9A32"
+        android:text="Rate Card" />
+    
+    <ScrollView
+        android:id="@+id/scrollviewabout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview" >
+        
+        <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+	  
+	    
+	      <RelativeLayout
+	        android:id="@+id/quantlayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_centerHorizontal="true"
+	        >
+	      <TextView
+	        android:id="@+id/textViewcity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#575757"
+	        android:text="Select City" 
+	        android:layout_centerVertical="true"
+	        />
+
+	     <Spinner
+	        android:id="@+id/city"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/ic_dropd"
+	        android:layout_toRightOf="@+id/textViewcity"
+	        android:layout_marginLeft="4dp"
+	        />
+	     
+	  
+	    </RelativeLayout>
+	     
+	      
+	       <RelativeLayout
+	        android:id="@+id/detailslayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/quantlayout"
+	        android:orientation="horizontal"
+	        android:background="#ffffff"
+	        android:layout_marginTop="3dp"
+	        >
+	     
+	        <TextView
+	        android:id="@+id/standardtext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginBottom="3dp"
+	        android:textColor="#FABB14"
+	        android:background="@drawable/filledborder"
+	        android:text="STANDARD RATES"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	        <TextView
+	        android:id="@+id/textViewstandard1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/standardtext"
+	        android:textColor="#646464"
+	        android:text="First 2.5 Kms:"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	         <TextView
+	        android:id="@+id/textViewrate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/standardtext"
+	        android:textColor="#5C5C5C"
+	        android:text="40"
+	        android:layout_toLeftOf="@+id/textViewruppesymbol1"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	         <TextView
+	        android:id="@+id/textViewruppesymbol1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/standardtext"
+	        android:layout_alignParentRight="true"
+	        android:textColor="#5C5C5C"
+	        android:text="@string/Rs"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	         
+	           <View style="@style/farechartDivider"
+	            android:layout_width="fill_parent"
+	            android:layout_below="@+id/textViewruppesymbol1"/>
+	         
+	        <TextView
+	        android:id="@+id/textViewstandard2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textViewruppesymbol1"
+	        android:layout_margin="3dp"
+	        android:textColor="#646464"
+	        android:text="After 2.5 Kms :"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	         <TextView
+	        android:id="@+id/textViewrate2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/textViewruppesymbol1"
+	        android:textColor="#5C5C5C"
+	        android:layout_toLeftOf="@+id/textViewruppesymbol2"
+	        android:textSize="@dimen/cartdetailstextsize"
+	        android:text="12" />
+	         
+	        
+	        <TextView
+	        android:id="@+id/textViewruppesymbol2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/textViewruppesymbol1"
+	        android:layout_alignParentRight="true"
+	        android:textColor="#5C5C5C"
+	        android:textSize="@dimen/cartdetailstextsize"
+	        android:text="@string/Rs" />
+	         
+	     
+	        <TextView
+	        android:id="@+id/nightext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FABB14"
+	        android:background="@drawable/filledborder"
+	        android:layout_marginTop="15dp"
+	        android:text="NIGHT CHARGES"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:layout_below="@+id/textViewruppesymbol2"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	         
+	        <TextView
+	        android:id="@+id/textViewnight1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nightext"
+	        android:layout_margin="3dp"
+	        android:paddingBottom="3dp"
+	        android:textColor="#646464"
+	        android:text="Night Charges:"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	         <TextView
+	        android:id="@+id/textViewnightrates1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/nightext"
+	        android:layout_alignParentRight="true"
+	        android:textColor="#5C5C5C"
+	        android:textSize="@dimen/cartdetailstextsize"
+	        android:text="1.3x" />
+	       
+	           
+	           <TextView
+	        android:id="@+id/extratext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FABB14"
+	        android:background="@drawable/filledborder"
+	        android:layout_marginTop="15dp"
+	        android:text="EXTRA CHARGES"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:layout_below="@+id/textViewnightrates1"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	         
+	        <TextView
+	        android:id="@+id/extra1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/extratext"
+	        android:layout_margin="3dp"
+	        android:paddingBottom="3dp"
+	        android:textColor="#646464"
+	        android:text="Wait time charges :"
+	        android:textSize="@dimen/cartdetailstextsize" />
+	        
+	         <TextView
+	        android:id="@+id/extrarate1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/extratext"
+	        android:layout_toLeftOf="@+id/textViewruppesymbol3"
+	        android:textColor="#5C5C5C"
+	        android:textSize="@dimen/cartdetailstextsize"
+	        android:text="0" />
+	         
+	         <TextView
+	        android:id="@+id/textViewruppesymbol3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="3dp"
+	        android:layout_below="@+id/extratext"
+	        android:layout_alignParentRight="true"
+	        android:textColor="#5C5C5C"
+	        android:layout_centerVertical="true"
+	        android:textSize="@dimen/cartdetailstextsize"
+	        android:text="@string/Rs" />
+	         
+	         <View 
+	             android:id="@+id/divide"
+	             style="@style/farechartDivider"
+	            android:layout_width="fill_parent"
+	            android:layout_below="@+id/textViewruppesymbol3"/>
+	         
+	           <TextView
+	        android:id="@+id/peaktimechargestext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/divide"
+	        android:layout_margin="3dp"
+	        android:textColor="#646464"
+	        android:text="Peak time charges may be applicable during high demand."
+	        android:textSize="@dimen/cartdetailstextsize" />
+	       
+	       </RelativeLayout>
+
+    </RelativeLayout>
+           
+           </ScrollView>
+     
+    
+     
+    
+    </RelativeLayout>
+    
+     
+   
+   
+    
+ 
+    
+</RelativeLayout>

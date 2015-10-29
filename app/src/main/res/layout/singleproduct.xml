@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@drawable/cardview">
+
+   
+ 
+    <RelativeLayout 
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="#ffffff">
+    
+  
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/auto"
+        />
+    
+   
+    
+    <TextView
+        android:id="@+id/textviewbookingid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/textviewdate"
+        android:layout_marginLeft="5dp"
+        android:text="Date:" />
+    
+     <TextView
+        android:id="@+id/textviewbookingidvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textviewbookingid"
+        android:layout_marginLeft="2dp"
+        android:textColor="#606060"
+        android:text="30 May 2015" />
+    
+    <TextView
+        android:id="@+id/textviewfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/textviewbookingid"
+        android:layout_marginLeft="5dp"
+        android:text="Driver name:" />
+    
+     <TextView
+        android:id="@+id/textviewdrivernamevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewbookingid"
+        android:layout_alignBaseline="@+id/textviewuser"
+        android:layout_toRightOf="@+id/textviewfrom"
+        android:layout_marginLeft="2dp"
+        android:textColor="#DD9A32"
+        android:textStyle="bold"
+        android:text="Vijaynagar,Indore" />
+     
+     
+      <TextView
+        android:id="@+id/textviewdriverauto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/textviewdrivernamevalue"
+        android:layout_marginLeft="5dp"
+        android:text="Auto no:" />
+    
+     <TextView
+        android:id="@+id/textviewdriverautonovalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewdrivernamevalue"
+        android:layout_toRightOf="@+id/textviewdriverauto"
+        android:layout_marginLeft="2dp"
+        android:textColor="#DD9A32"
+        android:textStyle="bold"
+        android:text="Khajrana Ganesh Mandir,Indore" />
+     
+     
+    
+     
+    
+    </RelativeLayout>
+    
+     
+   
+   
+    
+ 
+    
+</RelativeLayout>

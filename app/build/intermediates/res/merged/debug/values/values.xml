@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+       <item>@drawable/historyicon</item> 
+         <item>@drawable/rateicon</item> 
+          <item>@drawable/panicicon</item> 
+        <item>@drawable/supporticon</item>
+        
+        <item>@drawable/shareicon</item>
+        <item>@drawable/abouticon</item>
+       
+    </array>
+    <string-array name="nav_drawer_items">
+        <item>BOOK MY RIDE</item>
+       <item>MY RIDES</item> 
+<!--         <item >RATE CARD</item> -->
+ 			<item>RATE CARD</item>
+ 			 <item>PANIC BUTTON</item>
+        <item>CALL SUPPORT</item>
+       
+        <item>SHARE APP</item>
+        <item>ABOUT</item>
+       
+    </string-array>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cartdetailstextsize">16dp</dimen>
+    <dimen name="letsgetyouloginhmargin">21dp</dimen>
+    <dimen name="mapheight">200dp</dimen>
+    <dimen name="signinbuttonmargin">26dp</dimen>
+    <dimen name="topmargin">6dp</dimen>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Rs">\u20B9</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TeleRickshaw</string>
+    <string name="create_account">Create Account</string>
+    <string name="email">Email</string>
+    <string name="firstname">Firstname</string>
+    <string name="forgotpw">Forgot Password</string>
+    <string name="lastname">Lastname</string>
+    <string name="lets_create_account">"Let's create your account"</string>
+    <string name="phone">Phonenumber</string>
+    <string name="pwhint">Password</string>
+    <string name="signin_des">Lets sign you in</string>
+    <string name="signin_title">Sign In</string>
+    <string name="usernamehint">Email</string>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+</style>
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    <style name="Dialogtitle">
+         
+         <item name="*android:dialogTitleDecorLayout">@layout/popup_ridenow</item>
+     </style>
+    <style name="Divider">
+    <item name="android:layout_width">1dp</item>
+    <item name="android:layout_height">5dp</item>
+  
+    <item name="android:background">#FFB300</item>
+    
+</style>
+    <style name="HDivider">
+    <item name="android:layout_width">5dp</item>
+    <item name="android:layout_height">2dp</item>
+  
+    <item name="android:background">#FFB300</item>
+    
+</style>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="Theme.Styled" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/Theme.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Theme.Styled.ActionBar</item>
+        <item name="android:showDividers">beginning</item>
+        <item name="android:textColor">@android:color/black</item>
+           
+    </style>
+    <style name="Theme.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@drawable/bg_striped</item>
+        <item name="android:height">62dp</item>
+        <item name="android:background">@drawable/bg_striped</item>
+        <item name="android:textColor">@android:color/black</item>
+         <item name="android:titleTextStyle">@style/Theme.Styled.ActionBar.TitleTextStyle</item>
+		 <item name="titleTextStyle">@style/Theme.Styled.ActionBar.TitleTextStyle</item>
+		 
+
+    </style>
+    <style name="Theme.Styled.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:shadowDy">3</item>
+        <item name="android:textColor">@android:color/white</item>
+	
+	
+  </style>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="farechartDivider">
+    <item name="android:layout_width">10dp</item>
+    <item name="android:layout_height">0.5dp</item>
+  
+    <item name="android:background">#B9B9B9</item>
+    
+</style>
+</resources>

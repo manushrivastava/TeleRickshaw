@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+     android:background="@android:color/transparent"
+  
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/relativeLayout1"
+          android:background="@android:color/transparent"
+         >
+       <FrameLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#303030"
+         >  
+           <TextView
+           android:id="@+id/textView_heading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:text="Book Your Ride"
+           
+           android:textColor="#FFFFFF" />
+           
+            <ImageButton
+         android:id="@+id/imageButton_cancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right|center_vertical"
+         android:background="@android:color/transparent"
+         android:layout_centerVertical="true"
+         android:src="@drawable/com_facebook_close" />
+           
+       </FrameLayout>
+       
+        <RelativeLayout
+            android:id="@+id/middlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topbar"
+            android:background="#fabb14"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="From"
+                android:textColor="#000000" />
+            
+<!--             <com.gcs.utils.CustomAutoCompleteTextView -->
+<!-- 		        android:id="@+id/atv_placesfrom" -->
+<!-- 		        android:layout_width="fill_parent" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:layout_below="@+id/textView_from" -->
+<!-- 		        android:background="@drawable/textboxbg" -->
+<!-- 		        android:singleLine="true" -->
+<!-- 		         /> -->
+
+            <TextView
+                android:id="@+id/textView_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_from"
+                android:layout_margin="5dp"
+                android:text="Estimated drop location (Optional)"
+                android:textColor="#000000" />
+            
+             <com.gcs.utils.CustomAutoCompleteTextView
+		        android:id="@+id/atv_placesto"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView_to"
+		          android:background="@drawable/textboxbg"
+		          android:singleLine="true"
+		         />
+            
+        </RelativeLayout>
+        
+     <RelativeLayout
+            android:id="@+id/bottombar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/middlebar"
+            android:background="#fabb14"
+            android:paddingBottom="5dp"
+            >
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+    
+    <Button android:id="@+id/button_confirm" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="0.5"
+        android:text="Confirm" 
+        android:textColor="#ffffff"
+         android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:background="@drawable/popupbutton_properties"
+        android:layout_centerHorizontal="true"/>
+    
+    <Button android:id="@+id/button_fareestimate" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Fare Estimate" 
+        android:textColor="#ffffff"
+         android:paddingTop="5dp"
+         android:layout_weight="0.5"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:background="@drawable/popupbutton_properties"
+        android:layout_centerHorizontal="true"/>
+    
+    </LinearLayout>
+    </RelativeLayout>
+      
+    </RelativeLayout>
+   
+
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/popup_ridenow.xml -->

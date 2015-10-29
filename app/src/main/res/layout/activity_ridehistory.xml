@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <RelativeLayout 
+    android:id="@+id/textboxlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp"
+    tools:context=".MainActivity" >
+  
+     
+
+</RelativeLayout>
+    <ListView
+        android:id="@+id/listViewlivewall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textboxlayout"
+        android:background="#FFFFFF"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="8dp"
+         android:layout_marginRight="8dp"
+        android:dividerHeight="4dp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewnobookingsdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="No Bookings done"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

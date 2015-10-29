@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/relativeLayout1"
+         >
+       <FrameLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#303030"
+         >  
+           <TextView
+           android:id="@+id/textView_heading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:text="Verify your account"
+           android:textColor="#ffffff" />
+           
+       </FrameLayout>
+       
+        <RelativeLayout
+            android:id="@+id/middlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topbar"
+            android:background="#fabb14"
+            android:padding="10dp" >
+           
+              <TextView
+           android:id="@+id/textView_message"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:text="We have sent a One Time Password on your Email and Phone"
+           android:textColor="#000000" />
+            
+            <EditText
+                android:id="@+id/edittext_forgotpw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/textView_message"
+                android:hint="Enter one time password "
+                android:background="@drawable/textboxbg" />
+                       
+        </RelativeLayout>
+        
+     <RelativeLayout
+            android:id="@+id/bottombar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/middlebar"
+            android:background="#fabb14"
+            >
+    <Button 
+        android:id="@+id/button_confirm" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Confirm" 
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:paddingTop="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/popupbutton_properties"
+        android:layout_centerHorizontal="true"/>
+    
+    </RelativeLayout>
+      
+    </RelativeLayout>
+   
+
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/enterotpddialog.xml -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="@drawable/cardview">
+
+   
+ 
+    <RelativeLayout 
+    android:id="@+id/toplayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="#ffffff">
+    
+  
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/telerickshaw_logo"
+        />
+    
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DD9A32"
+        android:layout_margin="2dp"
+        android:text="Rate Details" />
+    
+     
+    
+     
+    
+    </RelativeLayout>
+    
+     
+   
+   
+    
+ 
+    
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/activity_ratedetails.xml -->

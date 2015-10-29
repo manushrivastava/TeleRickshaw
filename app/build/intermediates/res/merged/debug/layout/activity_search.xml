@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+   >
+   
+    
+    
+
+    
+    <com.gcs.utils.CustomAutoCompleteTextView
+		        android:id="@+id/searchplaces"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="10dp"
+		        android:background="@drawable/textboxbg"
+		        android:singleLine="true"
+		        android:layout_margin="1dp"
+		        android:hint="Search location..."
+		         />
+    
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:textSize="16sp"
+        android:textColor="#858585"
+        android:layout_below="@+id/searchplaces"
+        android:text="Recent Search :" />
+    
+
+    <ListView
+        android:id="@+id/listView_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp" 
+        android:layout_marginBottom="5dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/button_clearhistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:background="@drawable/popupbutton_properties"
+        android:text="Clear search history" />
+
+  
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/activity_search.xml -->

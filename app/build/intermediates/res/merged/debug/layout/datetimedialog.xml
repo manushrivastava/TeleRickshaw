@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" 
+	>
+
+    <DatePicker
+         android:id="@+id/datePicker1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_centerHorizontal="true"
+         android:calendarViewShown="false"
+          >
+    </DatePicker>
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottomsecondlayout"
+         >
+    </TimePicker>
+    
+    <LinearLayout 
+	    android:id="@+id/bottomsecondlayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="5dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="#000000" >
+    
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textColor="#FFB300"
+        android:text="Done" 
+        android:background="@drawable/ride_selector"/>
+    
+    <View style="@style/Divider"
+        android:layout_height="fill_parent"
+       />
+    
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textColor="#FFB300"
+        android:text="Cancel" 
+        android:background="@drawable/ride_selector"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/datetimedialog.xml -->

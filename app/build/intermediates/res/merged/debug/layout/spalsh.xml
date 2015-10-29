@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			xmlns:custom="http://Schemas.android.com/apk/res-auto"
+    				xmlns:circleprogress="http://schemas.android.com/apk/res/me.fichardu.circleprogress.CircleProgress"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res/com.gcs.telerickshaw">
+
+   <ImageView
+		android:id="@+id/panningView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/sp"
+		android:scaleType="fitXY"
+		/>
+   
+<!--    <RelativeLayout  -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="fill_parent"  -->
+<!--     android:background="@drawable/splashbg" -->
+<!--     android:alpha="0.25" -->
+<!--     > -->
+
+       
+
+<!--    </RelativeLayout> -->
+   
+   <ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="200dp"
+	    android:layout_height="86dp"
+	    android:layout_centerInParent="true"
+	    android:src="@drawable/telerickshaw_logo" />
+   
+   <RelativeLayout 
+     android:id="@+id/progresslayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/imageView1"
+    android:layout_centerHorizontal="true"
+    >
+<!--    <me.fichardu.circleprogress.CircleProgress -->
+<!--         android:id="@+id/progress" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content"    -->
+<!--         android:layout_centerHorizontal="true"    -->
+<!--         app:color3="#ffffff" -->
+<!--         app:color2="#ffffff" -->
+<!--         app:color1="#ffffff" -->
+        
+<!--         /> -->
+   
+   <com.loadindicators.adrianlesniak.library.LoaderView
+    android:id="@+id/imageLoader"
+    app:loaderFrameDelay="40"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"/>
+   
+     <TextView
+        android:id="@+id/textViewRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:text="Tap to retry"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+	
+	</RelativeLayout>
+	
+<!--    <TextView -->
+<!--         android:id="@+id/loadintext" -->
+<!--         android:layout_below="@+id/progresslayout" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content"        -->
+<!--         android:text="Loading" -->
+<!--         android:textColor="#ffffff" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!-- 	/>  -->
+
+<!--     <ProgressBar -->
+<!--          android:id="@+id/progressBar1" -->
+<!--          android:layout_width="wrap_content" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:visibility="invisible" -->
+<!--          android:layout_centerInParent="true" /> -->
+
+
+	<Button
+           android:id="@+id/button_call"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_margin="5dp"
+           android:background="@drawable/yellowbutton_properties"
+           android:text="Click here to call 9098098098" />
+	
+	
+ </RelativeLayout>  <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/spalsh.xml -->

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/sp1" 
+    >
+
+     <ImageView
+		android:id="@+id/panningView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/splashbg"
+		android:alpha="0.55"
+		android:scaleType="fitXY"
+		/>
+     <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/topmargin"
+        android:text="Sign up" 
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+     
+     <LinearLayout
+         android:id="@+id/linearLayout2"
+         android:layout_below="@+id/textViewtitle"
+         android:layout_marginTop="@dimen/topmargin"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+    
+    <EditText
+        android:id="@+id/editTextfirstname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/firstname"
+        android:background="@drawable/textboxbg"
+        android:inputType="textPersonName" >
+        
+        <requestFocus />
+    </EditText>
+    
+     <EditText
+        android:id="@+id/editTextlastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.5"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/lastname"
+        android:background="@drawable/textboxbg"
+        android:inputType="textPersonName" >
+        
+    </EditText>
+</LinearLayout>
+
+     
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/textboxbg"
+         >
+        
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextphonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/editTextusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/phone"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/textboxbg"
+         >
+        
+    </EditText>
+    
+     <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/editTextphonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/pwhint"
+        android:background="@drawable/textboxbg"
+        android:inputType="textPassword" >
+    </EditText>
+
+     <Button
+         android:id="@+id/button_signin"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_below="@+id/editTextpassword"
+         android:textColor="#ffffff"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/greybutton_properties"
+         android:layout_marginTop="@dimen/signinbuttonmargin"
+         android:text="@string/create_account"
+         android:textStyle="bold" />
+
+<!--      <TextView -->
+<!--          android:id="@+id/or_text" -->
+<!--          android:layout_width="wrap_content" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_below="@+id/button_signin" -->
+<!--          android:layout_centerHorizontal="true" -->
+<!--          android:textColor="@drawable/forgotpwcolortext" -->
+<!--          android:layout_marginTop="@dimen/letsgetyouloginhmargin" -->
+<!--          android:text="OR" /> -->
+
+     <ProgressBar
+         android:id="@+id/progressBar1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="invisible"
+         android:layout_centerInParent="true" />
+
+</RelativeLayout>

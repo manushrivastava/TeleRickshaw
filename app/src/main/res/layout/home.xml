@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+            android:id="@+id/addresssearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addresssearchtextbox"
+            android:layout_margin="3dp"
+            android:orientation="horizontal" >
+            
+        <ImageView
+                android:id="@+id/imageViewsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_search_light" />
+        
+            <TextView
+                android:id="@+id/adressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:singleLine="true"
+                android:textColor="#898989"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+  				android:scrollHorizontally="true"
+  				android:focusable="true"
+          		android:focusableInTouchMode="true" 
+                android:text="Getting location"
+                android:textSize="16sp" />
+            
+              
+
+            
+        </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/googleMapfragment"
+        android:layout_below="@+id/addresssearch"
+        android:layout_above="@+id/bottomfirstlayout"
+         >
+         
+     <fragment
+        android:id="@+id/googleMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+         />
+     
+     <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+<!--             <TextView -->
+<!--                 android:id="@+id/locationMarkertext" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:background="@drawable/roundedcornertext" -->
+<!--                 android:gravity="center" -->
+<!--                 android:minWidth="180dp" -->
+<!--                 android:paddingLeft="2dp" -->
+<!--                 android:paddingRight="2dp" -->
+<!--                 android:text=" Set your Location " -->
+<!--                 android:textColor="@android:color/white" /> -->
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mappointer" />
+            
+        </LinearLayout>
+        
+     
+     
+     
+     </FrameLayout>
+      <View 
+          android:id="@+id/hdivider"
+          style="@style/HDivider"
+        android:layout_width="fill_parent"
+         android:layout_above="@+id/bottomsecondlayout" 
+       />
+      
+      
+      
+      <RelativeLayout 
+        
+     android:id="@+id/bottomfirstlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:layout_above="@+id/bottomsecondlayout"
+    android:background="#F5F0F3" >
+
+          <ImageView
+              android:id="@+id/imageViewauto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/auto" 
+              android:layout_alignParentLeft="true"
+              android:layout_margin="3dp"/>
+
+         
+          
+           <TextView
+              android:id="@+id/textViewtime"
+              android:layout_below="@+id/textViewdistance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/imageViewauto"
+              android:text="Finding Auto Rickshaw" />
+    
+    </RelativeLayout>
+     
+
+    <LinearLayout 
+        
+    android:id="@+id/bottomsecondlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="#000000" >
+    
+    <Button
+        android:id="@+id/button_ridenow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textColor="#fabb14"
+        android:text="RIDE NOW" 
+        android:background="@drawable/ride_selector"/>
+    
+    <View style="@style/Divider"
+        android:layout_height="fill_parent"
+       />
+    
+    <Button
+        android:id="@+id/button_ridelater"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="0.5"
+         android:textColor="#fabb14"
+        android:text="RIDE LATER" 
+        android:background="@drawable/ride_selector"/>
+    </LinearLayout>
+    
+     <ProgressBar
+         android:id="@+id/progressBar1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:visibility="invisible"
+         android:layout_centerInParent="true" />
+
+</RelativeLayout>

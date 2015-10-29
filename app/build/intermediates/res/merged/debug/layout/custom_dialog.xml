@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fabb14"
+    android:layout_gravity="center">
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/relativeLayout1"
+          android:background="@android:color/transparent"
+         >
+    
+     <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+         >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Telerickshaw"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+ </FrameLayout>
+ 
+     
+       <ScrollView
+        android:id="@+id/framelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/frame"
+       >
+
+
+		<TextView
+            android:id="@+id/textViewcompletedes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start booking your ride"
+            android:textStyle="normal"
+            android:layout_below="@+id/frame"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:lines="5"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+           
+		</ScrollView>
+         
+  
+      <Button
+          android:id="@+id/button_close"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/framelayout2"
+          android:layout_margin="3dp"
+          android:layout_centerHorizontal="true"
+          android:text="Next"
+          android:textColor="#ffffff"
+          android:background="@drawable/popupbutton_properties"
+           />
+ 
+      </RelativeLayout>
+ </RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/custom_dialog.xml -->

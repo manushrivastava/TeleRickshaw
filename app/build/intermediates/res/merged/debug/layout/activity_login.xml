@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sp1" 
+    >
+
+     <ImageView
+		android:id="@+id/panningView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/splashbg"
+		android:alpha="0.55"
+		android:scaleType="fitXY"
+		/>
+     
+        <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/topmargin"
+        android:text="Sign in"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewtitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:text="@string/signin_des" />
+
+    <EditText
+        android:id="@+id/editTextusername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/usernamehint"
+        android:background="@drawable/textboxbg"
+        android:inputType="textPersonName" >
+        
+        <requestFocus />
+    </EditText>
+    
+     <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/editTextusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+        android:hint="@string/pwhint"
+        android:background="@drawable/textboxbg"
+        android:inputType="textPassword" >
+        
+    </EditText>
+
+     <Button
+         android:id="@+id/button_signin"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_below="@+id/editTextpassword"
+         android:textColor="#ffffff"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/greybutton_properties"
+         android:layout_marginTop="@dimen/signinbuttonmargin"
+         android:text="@string/signin_title"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/forgotpassword_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button_signin"
+         android:layout_centerHorizontal="true"
+         android:textColor="@drawable/forgotpwcolortext"
+         android:layout_marginTop="@dimen/letsgetyouloginhmargin"
+         android:text="@string/forgotpw" />
+     
+      <ProgressBar
+         android:id="@+id/progressBar1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:visibility="invisible"
+         android:layout_centerInParent="true" />
+
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/activity_login.xml -->

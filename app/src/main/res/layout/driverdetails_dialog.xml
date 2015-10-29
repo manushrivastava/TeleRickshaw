@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fabb14"
+    android:layout_gravity="center">
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/relativeLayout1"
+          android:background="@android:color/transparent"
+         >
+    
+          <ImageButton
+           android:id="@+id/imagebutton_cancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentRight="true"
+           android:layout_margin="2dp"
+           android:src="@drawable/com_facebook_close" />
+         
+          
+     <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+         >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking accepted by"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+ </FrameLayout>
+ 
+      <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/middlelayout"
+         android:layout_below="@+id/frame"
+         android:background="@android:color/transparent"
+         >
+    
+     <LinearLayout 
+          android:id="@+id/driverlayout"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="5dp"
+          android:gravity="center_horizontal"
+          android:layout_centerHorizontal="true">
+        
+         <ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/drivericon" />
+         
+		<TextView
+            android:id="@+id/textViewdrivername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="Drivername"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+		
+		</LinearLayout>
+		
+     
+     <LinearLayout 
+          android:id="@+id/rickshawdetailslayout"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/driverlayout"
+          android:orientation="horizontal"
+          android:layout_margin="5dp"
+          android:gravity="center_horizontal"
+          android:layout_centerHorizontal="true">
+		
+         <TextView
+            android:id="@+id/textViewautonum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="Auto Number :"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        
+         
+		<TextView
+            android:id="@+id/textViewautonumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="MP09123456"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+		
+		</LinearLayout>
+		
+     
+      
+      <Button
+          android:id="@+id/buttonshowonmap"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/rickshawdetailslayout"
+          android:layout_centerHorizontal="true"
+          android:textColor="#ffffff"
+          android:background="@drawable/popupbutton_properties"
+          android:text="show on map" />
+           
+		</RelativeLayout>
+		
+      
+       <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/middlelayout"
+          android:layout_marginTop="3dp">
+       
+  
+      <Button
+          android:id="@+id/button_close"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="3dp"
+          android:layout_centerHorizontal="true"
+          android:text="Cancel Ride"
+          android:textColor="#ffffff"
+          android:background="@drawable/popupbutton_properties"
+          android:layout_weight="0.5"
+           />
+ 
+      <Button
+          android:id="@+id/button_ok"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/progressBar1"
+          android:layout_margin="3dp"
+          android:layout_centerHorizontal="true"
+          android:text="Call Driver"
+          android:textColor="#ffffff"
+          android:layout_weight="0.5"
+          android:background="@drawable/popupbutton_properties"
+           />
+ 
+      </LinearLayout>
+
+      
+      </RelativeLayout>
+
+   
+ </RelativeLayout>
