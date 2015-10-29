@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.gcs.telerickshaw"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 19
     }
 
@@ -25,4 +25,5 @@ dependencies {
     compile files('libs/bolts-android-1.1.3.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile files('libs/universal-image-loader-1.9.3.jar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }

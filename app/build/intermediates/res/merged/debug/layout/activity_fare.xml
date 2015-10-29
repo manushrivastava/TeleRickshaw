@@ -63,7 +63,6 @@
 	        android:id="@+id/city"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:background="@drawable/ic_dropd"
 	        android:layout_toRightOf="@+id/textViewcity"
 	        android:layout_marginLeft="4dp"
 	        />

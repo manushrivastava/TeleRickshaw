@@ -25,6 +25,9 @@
         <item>ABOUT</item>
        
     </string-array>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="holo_light_primary">#e6e6e6</color>
     <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -34,6 +37,9 @@
     <dimen name="mapheight">200dp</dimen>
     <dimen name="signinbuttonmargin">26dp</dimen>
     <dimen name="topmargin">6dp</dimen>
+    <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/versionno.xml -->
+    <eat-comment/>
+    <integer name="ver">1</integer>
     <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Rs">\u20B9</string>
@@ -89,24 +95,27 @@
 </style>
     <!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/values/themes.xml -->
     <eat-comment/>
-    <style name="Theme.Styled" parent="Theme.Sherlock.Light">
-        <item name="actionBarStyle">@style/Theme.Styled.ActionBar</item>
+    <style name="Theme">
+        
+    </style>
+    <style name="Theme.Styled">
+
         <item name="android:actionBarStyle">@style/Theme.Styled.ActionBar</item>
         <item name="android:showDividers">beginning</item>
         <item name="android:textColor">@android:color/black</item>
            
     </style>
-    <style name="Theme.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid">
-        <item name="background">@drawable/bg_striped</item>
+    <style name="Theme.Styled.ActionBar">
+
         <item name="android:height">62dp</item>
         <item name="android:background">@drawable/bg_striped</item>
         <item name="android:textColor">@android:color/black</item>
          <item name="android:titleTextStyle">@style/Theme.Styled.ActionBar.TitleTextStyle</item>
-		 <item name="titleTextStyle">@style/Theme.Styled.ActionBar.TitleTextStyle</item>
+		 
 		 
 
     </style>
-    <style name="Theme.Styled.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+    <style name="Theme.Styled.ActionBar.TitleTextStyle">
         <item name="android:shadowDy">3</item>
         <item name="android:textColor">@android:color/white</item>
 	
