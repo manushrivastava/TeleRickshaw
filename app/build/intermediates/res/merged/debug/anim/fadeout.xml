@@ -3,4 +3,4 @@
          <alpha android:fromAlpha="1.0" android:toAlpha="0.0" 
           android:interpolator="@android:anim/accelerate_interpolator" 
           android:duration="1000"/>
-     </set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/anim/fadeout.xml -->
+     </set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/anim/fadeout.xml -->

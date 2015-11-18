@@ -5,4 +5,4 @@
             android:interpolator="@android:anim/linear_interpolator"
     android:duration="1000" />
 
-</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/anim/bottomdown.xml -->
+</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/anim/bottomdown.xml -->

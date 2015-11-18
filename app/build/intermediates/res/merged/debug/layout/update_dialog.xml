@@ -44,4 +44,4 @@
     android:text="Click here to download"
     android:textColor="@android:color/white" />
  
-</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/layout/update_dialog.xml -->
+</RelativeLayout><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/layout/update_dialog.xml -->

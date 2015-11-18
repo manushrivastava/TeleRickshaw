@@ -18,6 +18,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -86,7 +87,7 @@ import com.gcs.utils.UserDatabaseHandler;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient;
 import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -100,14 +101,17 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.android.gms.common.api.GoogleApiClient;
 
-public class MainActivity extends SherlockFragment implements LocationListener,OnClickListener ,GooglePlayServicesClient.ConnectionCallbacks,
-GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  { 
+public class MainActivity extends SherlockFragment implements LocationListener,OnClickListener ,OnDragListener, GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener
+{
 	
 	GoogleMap mGoogleMap;
 	// A request to connect to Location Services
     private LocationRequest mLocationRequest;
-    private LocationClient mLocationClient;
+    private GoogleApiClient client=null;
+
+//    private LocationClient mLocationClient;
     String timetopick="";
     boolean suggestionselected=false;
 
@@ -191,8 +195,8 @@ GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		
-		
+
+
 		if (mTouchView != null && this.previousContainer == container) {
 	        ViewGroup parent = (ViewGroup) mTouchView.getParent();
 	        if (parent != null) {
@@ -261,7 +265,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  {
 	            // Getting reference to the SupportMapFragment
 	            // Create a new global location parameters object
 	            mLocationRequest = LocationRequest.create();
-
+                client = new GoogleApiClient.Builder(new Activity()).addApi(LocationServices.API).addConnectionCallbacks(this).addOnConnectionFailedListener(this).build();
 	            /*
 	             * Set the update interval
 	             */
@@ -282,8 +286,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  {
 	             * Create a new location client, using the enclosing class to handle
 	             * callbacks.
 	             */
-	            mLocationClient = new LocationClient(getActivity(), this,this);
-	            mLocationClient.connect();
+	            client.connect();
 	        }
 	    }
 		return mTouchView;
@@ -303,10 +306,9 @@ GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  {
   		       mGoogleMap =supportMapFragment.getMap();
             // Enabling MyLocation in Google Map
                mGoogleMap.setMyLocationEnabled(true);
-            
-            if (mLocationClient.getLastLocation() != null) {
-                latLong = new LatLng(mLocationClient.getLastLocation()
-                        .getLatitude(), mLocationClient.getLastLocation()
+            if (LocationServices.FusedLocationApi.getLastLocation(client)!= null) {
+                latLong = new LatLng(LocationServices.FusedLocationApi.getLastLocation(client)
+                        .getLatitude(), LocationServices.FusedLocationApi.getLastLocation(client)
                         .getLongitude());
 
             } else {
@@ -426,21 +428,19 @@ GooglePlayServicesClient.OnConnectionFailedListener, OnDragListener  {
     }
 
     @Override
-    public void onConnected(Bundle arg0) {
+    public void onConnected(Bundle a) {
         // TODO Auto-generated method stub
-        mLocationClient.requestLocationUpdates(mLocationRequest, this);
-        
+        LocationServices.FusedLocationApi.requestLocationUpdates(client, mLocationRequest, this);
+
+
         stupMap();
 
     }
-
     @Override
-    public void onDisconnected() {
-        // TODO Auto-generated method stub
-
+    public void onConnectionSuspended(int i) {
     }
-    
-  
+
+
 
 
     private class GetLocationAsync extends AsyncTask<String, Void, String> {

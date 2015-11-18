@@ -3,4 +3,4 @@
    <translate android:fromYDelta="75%p" android:toYDelta="0%p" 
     android:fillAfter="true"
  android:duration="1000"/>
-</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/anim/bottomup.xml -->
+</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/anim/bottomup.xml -->

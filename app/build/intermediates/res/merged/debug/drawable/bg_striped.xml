@@ -3,4 +3,4 @@
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/header_bt"
     android:tileMode="repeat"
-    /><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/drawable/bg_striped.xml -->
+    /><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/drawable/bg_striped.xml -->

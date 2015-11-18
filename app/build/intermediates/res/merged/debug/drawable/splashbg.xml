@@ -14,4 +14,4 @@ android:startColor="#ffffff"
 android:endColor="#ffffff"
 android:gradientRadius="100"/>
     </shape>
-    </shape><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/drawable/splashbg.xml -->
+    </shape><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/drawable/splashbg.xml -->

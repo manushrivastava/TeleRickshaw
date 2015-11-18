@@ -5,4 +5,4 @@
   <item android:drawable="@drawable/ride_bg_pressed" android:state_focused="true" /> 
   <item android:drawable="@drawable/ride_bg_normal" /> 
  
-</selector><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/drawable/ride_selector.xml -->
+</selector><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/drawable/ride_selector.xml -->

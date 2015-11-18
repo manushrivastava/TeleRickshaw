@@ -4,4 +4,4 @@
          android:fromYDelta="0" 
          android:toYDelta="-100%p" 
          android:duration="@android:integer/config_longAnimTime"/>
-</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw1/app/src/main/res/anim/trans_bottom_out.xml -->
+</set><!-- From: file:/home/manu/AndroidStudioProjects/TeleRickshaw/app/src/main/res/anim/trans_bottom_out.xml -->
