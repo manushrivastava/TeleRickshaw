@@ -216,6 +216,8 @@ public class MainActivity extends SherlockFragment implements LocationListener,O
 		 pbar=(ProgressBar)v.findViewById(R.id.progressBar1);
 		 button_ridenow=(Button)v.findViewById(R.id.button_ridenow);
 		 textview_time=(TextView)v.findViewById(R.id.textViewtime);
+
+			//git hub testing
 		
 		 textview_time.setTypeface(typeFacelatolight);
 		 button_ridelater.setTypeface(typeFace);
